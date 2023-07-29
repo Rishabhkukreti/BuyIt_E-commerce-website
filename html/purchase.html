@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>purchasing page</title>
+</head>
+<body bg color="grey">
+  <style>
+  body{ background-image :url(T.jpg);background-repeat: repeat;background-size:95%;font-size: large;}
+  h1{color:black ;}
+  form{text-align: center;color: black;}
+  </style>
+   <form action="purchase.php" method="post" > 
+   <h4> Name: <input type="text" name="name" required><br><br> 
+    Gender:<input type="radio" name="gender" value="M" required> Male
+     <input type="radio" name="gender" value="F" required> Female<br><br>
+    Mobile No : <input  type="number" name="contact" id="m" required>&nbsp;&nbsp;<p></p><br><br>
+    Address:><div><textarea rows="3" cols="15" name="address" required placeholder="write your address here..."></textarea></div><br><br> 
+    Product receiving date:  <input type="date" name="receivedate" ><br><br>
+    Choose Product:
+    <select name="product" required >
+      <option value=" ">-->Select the Product<--</option> 
+      <option value="CHIMNEY-[Kutchina Tiara]">CHIMNEY-[Kutchina Tiara]</option>
+      <option value="CHIMNEY-[Hindware Alexio]">CHIMNEY-[Hindware Alexio]</option>
+      <option value="CHIMNEY-[Prestige Clara]">CHIMNEY-[Prestige Clara]</option>
+      <option value="GEYSER-[Havells Instanio]">GEYSER-[Havells Instanio]</option>
+      <option value="GEYSER-[Crompton Bliss]">GEYSER-[Crompton Bliss]</option>
+      <option value="GEYSER-[Bajaj Juvel]">GEYSER-[Bajaj Juvel]</option>
+      <option value="INVERTER-[Luminous]">INVERTER-[Luminous]</option>
+      <option value="INVERTER-[Livguard]">INVERTER-[Livguard]</option>
+      <option value="INVERTER-[Microtek]">INVERTER-[Microtek]</option>
+      </select>
+    
+    <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <input type="submit" value="Submit" name="submit" > <input type="reset" value="Clear all"><br><br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="homepage.html"><input type="button" value="Back to home"/></a>
+</h4>
+</form> 
+
+</body>
+<script>
+      
+  let inp=document.querySelector('#m');
+  let out=document.querySelector('p');
+  inp.addEventListener('keyup',function()
+  {
+      if((inp.value).length==10)
+       {out.textContent="valid";}
+         else
+          {out.textContent="Enter a valid number";}
+  }                   )
+
+</script>
+</html
+
+
+

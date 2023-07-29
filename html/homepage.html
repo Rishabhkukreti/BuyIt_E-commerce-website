@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Home</title>
+<style>
+   .link{color: white;}
+   .link:visited{color: lightskyblue;}
+   .link:hover{color:blue}
+   .link:active{color: gray;}
+   .link{font-size: xx-large;}
+   #i{color: red;}
+  
+  
+  div.navi{background-color: black; width: 100%;height:30%;box-sizing: border-box;float: left;display:block;
+      position: sticky; top: 0%;}
+      .blink { position: relative;color: aliceblue;
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+      }
+      @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+   body{ 
+    background-size:cover;background-position-x:center;
+    font-weight: bold;font-size: larger; }
+
+           iframe{display: block;block-size: 300px;width: 100%;height: 91%;
+            border-color: black; border: solid;
+           }
+           
+          
+           img{width: 300px;height:150px; float: left;}
+           
+</style>
+</head>
+<body> 
+  <div class="navi">
+ <nav>
+     
+    <img src="q.jpg" alt="can't load image">
+     <h3> &nbsp;&nbsp;&nbsp;&nbsp;<a class="link" href="homepage.html" target="_self" style="text-decoration: solid;">Home</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <a class="link" href="product1.html" target="_self" style="text-decoration: solid; ">Purchasing</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="link" href="service.html" target="_self" style="text-decoration: solid;">Servicing</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="link" href="#3" target="_self" style="text-decoration: solid; ">About</a> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a class="link" href="help.html" target="_self" style="text-decoration: solid; ">Help</a> 
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input  type="search" id="search" placeholder="Search product" required>
+      <a href="product1.html"><input type="button" value="search"></a>
+     </h3><br>
+     <h2 class="blink">&nbsp;&nbsp;&nbsp;Sign up <a class="link" id="i" href="signup.html"  target="_blank">click here</a></h2>
+</nav>
+</div>
+<iframe src="login.html" frameborder="10"></iframe>
+<iframe src="about.html" frameborder="10" id="3" ></iframe>
+</body>
+
+</html>

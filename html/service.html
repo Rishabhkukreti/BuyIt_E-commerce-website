@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Servicing page</title>
+</head>
+ <body >
+    <style>    
+    h1 {text-align:center;font-size: xx-large;font-weight: 900;}
+    h3{ text-align:center ;color: black;font-weight: 900;}
+    h4{ text-align:center ;color: black; font-style:normal;font-size: 22px;font-weight: 900;}
+    form{text-align: center;}
+    body{background-image:url(l1.jpeg);
+        background-repeat: repeat;background-size: cover;}
+        
+    
+
+    </style>
+        <h1> Service Corner</h1>
+         <h3>Select the product for servicing</h3>
+  <form action="service.php" method="post">
+    <input type="radio" name="product" value="inverter">INVERTER&nbsp;&nbsp;
+    <input type="radio" name="product" value="chimney">CHIMNEY&nbsp;&nbsp;
+    <input type="radio" name="product" value="geyser">GEYSER<br><br>
+    <h4> Enter your mobile no:<input type="number" name="mobileno" id="m" required></h4><p></p>
+    <h4>Address:</h4><textarea name="address" id="" cols="30" rows="3" placeholder="write address here.." required></textarea>
+
+     <h4> Servicing date:<input type="date" name="servicedate" required></h4>
+     <h4> Servicing time slot: <input type="time" name="servicetime"></h4>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <input type="submit" value="submit">
+     <input type="reset" value="clear all"/><br><br>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="homepage.html"><input type="button" value="back to home"/></a>
+    </form>
+  
+    <h3 style="margin-top: 100px; margin-left: 60px;">Contact:1234567892 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Email:buyitfromus123@gmail.com/buyitfromus123@hotmail.com <br>
+         <a href="www.buyit.com">www.buyit.com</a></h3>
+
+    </body>
+    <script>
+    
+        let inp=document.querySelector('#m');
+     let out=document.querySelector('p');
+     inp.addEventListener('keyup',function()
+     {
+         if((inp.value).length==10)
+          {out.textContent="valid";}
+            else
+             {out.textContent="Enter a valid number";}
+         }                   )
+       
+   </script>
+    </html>

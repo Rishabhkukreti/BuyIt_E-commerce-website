@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background:  linear-gradient(to top left, #ffffff 0%, #66ccff 100%);">
+  <form action="help.php" method="post">  
+    <div class = "header">
+        <h1><b>Feedback/Help desk/Complaint</b></h1>
+    
+            <p>Please send us details about the incident you would like to report. Our Complaint Center will analyze your complaint and take the appropriate measures in order that the reported situation will not occur at any other time in the future. 
+            </p>
+    
+              <hr/>
+        </div>
+
+        <div class="form-group">
+            <label for="fname"><b>First Name:</b></label>
+            <input type="text" class="form-control" id="fname" placeholder="Enter first name" name="fname">
+          </div>
+         <br>
+          <div class="form-group">
+            <label for="lname"><b>Last Name:</b></label> 
+            <input type="text" class="form-control" id="lname" placeholder="Enter last name" name="lname">
+          </div>
+          <div class="form-group">
+
+            <label for="phoneNo"> <b>Phone Number: </b> </label>
+            <input type="text" id="phone" class="form-control" placeholder="Enter mobile number Number" name = "contact" >
+    
+          </div>
+
+          <label for="Select Your Area"><b>Select Your Area</b></label>
+          <select id="area" name="area" >
+            <option value="----">----</option>
+            <option value="Nehru Colony">Nehru Colony</option>
+            <option value="Defence Colony">Defence Colony</option>
+            <option value="Clement Town">Clement Town</option>
+            <option value="Garhi cantt">Garhi cantt</option>
+            <option value="ISBT">ISBT</option>
+            <option value="Premnagar">Premnagar</option>
+            <option value="Raipur">Raipur</option>
+            <option value="Kargi chowk">Kargi chowk</option>
+            <option value="Rishikesh">Rishikesh</option>
+            <option value="Mussoorie">Mussoorie</option>
+          </select>
+
+          <div id="formsection">
+
+            <label><b>What type of help you want?</b></label>
+    
+            <p><input type="checkbox" name="help" value="product">product related</p>
+            <p><input type="checkbox" name="help" value="fraud">fraud</p>
+            <p><input type="checkbox" name="help" value="payment">payment issue</p>
+    
+          </div>
+
+          <label for="subject"><b>Complaint Details:</b></label>
+
+    <textarea id="subject" name="feedback" placeholder="Enter your complaint details......." style="height:200px"></textarea>
+
+    <button type="submit" class="btn btn-outline-primary" name="submit">Submit</button>
+</form>
+    <style>
+             .header{
+                 font-size: 17px;
+                 font-family: candara;
+                 display: flex-end;
+                    }
+
+                             input[type=text], select, textarea {
+                             display: flex;
+                              width: 100%;
+                               padding: 12px;
+                                border: 1px solid #ccc;
+                                 border-radius: 4px;
+                                   box-sizing: border-box;
+                                     margin-top: 6px;
+                                       margin-bottom: 16px;
+                                         resize: vertical;
+                                                                 }
+
+                                                                
+                            @media screen and (max-width: 680px) {
+                           .header, .mainform, input[type=submit] {
+                                     margin: 0px 0px 0px 0px;
+                                                                  }
+                                                                 }                                  
+
+    </style>
+
+
+</body>
+</html>

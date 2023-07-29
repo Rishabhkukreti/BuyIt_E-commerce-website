@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>log in</title> 
+    </head>
+        <center>
+<body>
+       <style>
+           h2{text-align: left;font-weight: 900;color:gainsboro;}
+           h3{font-weight: 900;}
+           body{background-image: url(b.jpg); background-repeat: repeat-y;background-size: cover;
+                font-size: larger;color: darkblue;display: block;}
+                .btn{font-size: large;}
+       </style>
+       <div><h1>&nbsp;&nbsp;&nbsp;LOG IN</h1></div>
+    <form action="login2.php" method="post"><h3>USERNAME:&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" name="username" required><br><br>
+          PASSWORD:&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="password" name="password"  required></h3>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="LOGIN" name="submit">
+&nbsp;&nbsp;&nbsp;&nbsp;<br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+           	
+<input type="button" class="btn" value="forget password" onclick="run()"/>
+     </form>
+</body> 
+<script>
+  function run()
+  {
+    var x=prompt("Enter your registered mobile number");
+    if(x.length==10)
+    {alert("Password has been sent to your registered mobile number");}
+    else{alert("mobile number is not valid");}
+
+  }
+
+</script>
+
+</html>
